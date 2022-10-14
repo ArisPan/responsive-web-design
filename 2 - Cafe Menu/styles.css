@@ -1,0 +1,117 @@
+/* Stylesheet for Cafe Menu project */
+
+body {
+	font-family: sans-serif;
+	background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+	padding: 20px;
+}
+
+h1, h2, p {
+	text-align: center;
+}
+
+h1, h2 {
+	/* You can add a fallback value for the font-family by adding another font name separated by a comma. */
+	font-family: Impact, serif;
+}
+
+h1 {
+	font-size: 40px;
+	margin-top: 0;	 /* Remove default h1 top margin. */ 
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+hr {
+	height: 3px;
+	background-color: brown;
+	border-color: brown;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -25px;
+}
+
+.menu {
+	width: 80%;	/* 80% the width of its parent element (body) */
+	max-width: 500px;	/* To prevent coffee and dessert appear far apart from their prices on wide screens */
+	background-color: burlywood;
+
+	/* To center the div element horizontally, within the body element,
+	we set the margin-left and margin-right properties to auto. */
+	margin-left: auto;
+	margin-right: auto;
+
+	/* Or, since all 4 sides of the menu have the same internal spacing, we can simply use padding: 20px; */
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* You can style all the p elements nested anywhere in elements with a class named "item" like this: */
+.item p {
+	display: inline-block;
+	/* Focusing on the menu items and prices, there is a fairly large gap between each line.
+	We adjust the top and bottom margins to lessen that gap. */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.established {
+	font-style: italic;
+}
+
+/*
+	If we make the width of the page preview smaller, we notice at some point,
+	some of the text on the left starts wrapping around to the next line.
+	This is because the width of the p elements on the left side can only take up width% of the space.
+	We know the prices have fewer characters so we make the width of the flavor 75% and the price's 25%.
+*/
+.flavor, .dessert {
+	text-align: left;
+	width: 75%;
+}
+
+.price {
+	text-align: right;
+	width: 25%;
+}
+
+.bottom-devider {
+	margin-top: 25px;
+}
+
+/* Footer */
+
+footer {
+	font-size: 14px;
+}
+
+footer a {
+	color: black;
+}
+
+/* You change properties of a link when something happens to it by using a pseudo-selector that looks like { propertyName: propertyValue; }. */
+footer a:visited {
+	color: gray;
+}
+
+footer a:hover {
+	color: brown;
+}
+
+footer a:active {
+	color: white;
+}
+
+.address {
+	margin-bottom: 5px;
+}
