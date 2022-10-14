@@ -2,10 +2,10 @@
 Code and notes from the *Responsive Web Design Certification* provided by [freeCodeCamp(:fire:)](https://www.freecodecamp.org/learn/2022/responsive-web-design/).
 
 ### Part 1
-* Learn HTML by Building a Cat Photo App
-* Learn Basic CSS by Building a Cafe Menu
-* Learn CSS Coors by Building a Set of Colored Markers
-* Learn HTML Form by Building a Registration Form
+* [Learn HTML by Building a Cat Photo App](https://github.com/ArisPan/responsive-web-design/tree/main/1%20-%20Cat%20Photo%20App)
+* [Learn Basic CSS by Building a Cafe Menu](https://github.com/ArisPan/responsive-web-design/tree/main/2%20-%20Cafe%20Menu)
+* [Learn CSS Colors by Building a Set of Colored Markers](https://github.com/ArisPan/responsive-web-design/tree/main/3%20-%20Colored%20Markers)
+* [Learn HTML Form by Building a Registration Form](https://github.com/ArisPan/responsive-web-design/tree/main/4%20-%20Registration%20Form)
 * Survey Form **[Certification Project]**
 
 ### Part 2
