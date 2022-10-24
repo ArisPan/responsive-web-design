@@ -43,7 +43,7 @@ fieldset {
 
 /* You can select the last element of a specific type using the last-of-type CSS pseudo-class */
 fieldset:last-of-type {
-  border-bottom: none;
+ 	border-bottom: none;
 }
 
 input, textarea, select {
