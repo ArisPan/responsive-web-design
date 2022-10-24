@@ -4,10 +4,84 @@ body {
 	margin: 0;	/* To get rid of the horizontal scroll-bar, set the default margin added by some browsers to 0. */
 
 	background-color: #1b1b32;
-	color: #f5f6f7
+	color: #f5f6f7;
+
+	font-family: Tahoma;
+	font-size: 16px;
 }
 
 label {
 	display: block;
 	margin: 0.5rem 0;
+}
+
+h1, p {
+	margin: 1em auto;
+	text-align: center;
+}
+
+a {
+	color: #dfdfe2;
+}
+
+form {
+	margin: 0 auto;	/* margin-top and margin-bottom to the first value, margin-left and margin-right to the second value. */
+	max-width: 500px;
+	min-width: 300px;
+	width: 60vw;
+	padding-bottom: 2em;
+}
+
+fieldset {
+	border: none;
+	border-bottom: 3px solid #3b3b4f;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* You can select the last element of a specific type using the last-of-type CSS pseudo-class */
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+input, textarea, select {
+	width: 100%;
+	margin: 10px 0 0 0;	/* shorthand sequence corresponds to: top, right, bottom, left */
+	min-height: 2em;	/* This concerns the height of each option line */
+}
+
+.inline {
+	width: unset;	/* This will remove the earlier rule which set all the input elements to width: 100%. */
+	margin: 0 0.5em 0 0;	/* Add some space between the .inline elements and the label text */
+	vertical-align: middle;	/* Without this the .inline elements are too high on the line */
+}
+
+input, textarea {
+	background-color: #0a0a23;
+	border: 1px solid #0a0a23;
+
+	color: #FFFFFF;	/* This concerns the input characters */
+}
+
+/* To style the submit button, we can use an attribute selector, which selects an element based on the given attribute value.
+The following selects input elements with a type attribute value of "submit" */
+input[type="submit"] {
+	display: block;
+	margin: 1em auto;
+	width: 60%;
+	min-width: 300px;
+	height: 2em;
+	font-size: 1.1rem;
+	background-color: #3b3b4f;
+	border-color: white;
+}
+
+input[type="file"] {
+/*	Most browsers inject their own default CSS properties and values for different elements.
+	If you look closely, you might be able to notice the file input is smaller than the other text input elements.
+	By default, a padding of 1px 2px is given to input elements you can type in.
+	So, we apply the same padding to the file input. */
+	padding: 1px 2px;
 }
