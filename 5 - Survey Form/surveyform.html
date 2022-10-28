@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<h1 id="title" class="text-center">To know us better</h1>
+		<p id="description" class="description text-center">A short but very impolite questionnaire.</p>
+	</header>
+
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label" for="name">Name</label>
+			<input id="name" class="form-control" type="text" name="name" placeholder="Full name, no nonsense." required>
+		</div>
+		<div class="form-group">
+			<label id="email-label" for="email">Email</label>
+			<input id="email" class="form-control" type="email" name="email" placeholder="Not a burner atrocity, the real thing." required>
+		</div>
+		<div class="form-group">
+			<label id="age-label" for="age">Age</label>
+			<input id="age" class="form-control" type="number" name="age" max="120" min="12" placeholder="Lilibet never hesitated, would you?" required>
+		</div>
+		<div class="form-group">
+			<label id="dropdown-label" for="lets-talk-money">Lets talk money. Are you...</label>
+			<select id="dropdown" class="form-control" name="lets-talk-money">
+				<option disabled selected value>Choose one</option>
+				<option value="dirt-poor">Dirt Poor</option>
+				<option value="poor">Poor</option>
+				<option value="getting-by">Getting by</option>
+				<option value="well-off">Well off</option>
+				<option value="obnoxiously-rich">Obnoxiously rich</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<p>Have you ever considered getting a nose job?</p>
+			<label for="yes-to-the-nose-job">
+				<input id="yes-to-the-nose-job" class="input-radio" type="radio" name="nose-job" value="yes" checked> Definitely!
+			</label>
+			<label for="no-to-the-nose-job">
+				<input id="no-to-the-nose-job" class="input-radio" type="radio" name="nose-job" value="no"> No way! (Yeah right...)
+			</label>
+			<label for="indecisive-about-the-nose-job">
+				<input id="indecisive-about-the-nose-job" class="input-radio" type="radio" name="nose-job" value="indecisive"> Oh God! Should I?
+			</label>
+		</div>
+	</form>
+</body>
+</html>
