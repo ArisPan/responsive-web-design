@@ -1,0 +1,91 @@
+<!-- 
+	This is the submited solution.
+	The tests required that #name, #email and #number sould be descendants of #survey-form.
+	They also required that the titles of the first three input fields must be labels.
+	It slightly breaks with the current css file. Check surveyform.html for the visualy correct solution.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<h1 id="title" class="text-center">To know us better</h1>
+		<p id="description" class="description text-center">A short but very impolite questionnaire.</p>
+	</header>
+
+	<form id="survey-form">
+		<!-- <div class="form-group"> -->
+			<label id="name-label" class="titles">Name</label>
+			<!-- <p class="titles">Name</p> -->
+			<input id="name" class="field" type="text" name="name" placeholder="Full name, no nonsense." required>
+		<!-- </div> -->
+		<!-- <div class="form-group"> -->
+			<label id="email-label" class="titles">Email</label>
+			<!-- <p class="titles">Email</p> -->
+			<input id="email" class="field" type="email" name="email" placeholder="Not a burner atrocity, the real thing." required>
+		<!-- </div> -->
+		<!-- <div class="form-group"> -->
+			<label id="number-label" class="titles">Age</label>
+			<!-- <p class="titles">Age</p> -->
+			<input id="number" class="field" type="number" name="age" max="120" min="70" placeholder="To actualy complete a form you must be like 70..." required>
+		<!-- </div> -->
+		<div class="form-group">
+			<p class="titles">Lets talk money. Are you...</p>
+			<select id="dropdown" class="dropdown" name="lets-talk-money" title="money">
+				<option disabled selected value>Choose one</option>
+				<option value="dirt-poor">Dirt Poor</option>
+				<option value="poor">Poor</option>
+				<option value="getting-by">Getting by</option>
+				<option value="well-off">Well off</option>
+				<option value="obnoxiously-rich">Obnoxiously rich</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<p class="titles">Have you ever considered getting a nose job?</p>
+			<label for="yes-to-the-nose-job">
+				<input id="yes-to-the-nose-job" class="radio" type="radio" name="nose-job" value="yes" checked> Definitely!
+			</label>
+			<label for="no-to-the-nose-job">
+				<input id="no-to-the-nose-job" class="radio" type="radio" name="nose-job" value="no"> No way! (Yeah right...)
+			</label>
+			<label for="indecisive-about-the-nose-job">
+				<input id="indecisive-about-the-nose-job" class="radio" type="radio" name="nose-job" value="indecisive"> Oh God! Should I?
+			</label>
+		</div>
+		<div class="form-group">
+			<p class="titles">Why are you still single?</p>
+			<label>
+				<input class="checkbox" type="checkbox" name="single" value="ugly"> Ugly
+			</label>
+			<label>
+				<input class="checkbox" type="checkbox" name="single" value="miserly"> Miserly
+			</label>
+			<label>
+				<input class="checkbox" type="checkbox" name="single" value="stuck-up"> Stuck-up
+			</label>
+			<label>
+				<input class="checkbox" type="checkbox" name="single" value="insufferable"> Insufferable
+			</label>
+			<label>
+				<input class="checkbox" type="checkbox" name="single" value="inferiority-complex"> Inferiority Complex
+			</label>
+			<label>
+				<input class="checkbox" type="checkbox" name="single" value="all-of-the-above"> All of the above
+			</label>
+		</div>
+		<div class="form-group">
+			<p class="titles">How did you like me?</p>
+			<textarea class="textarea" name="offensive-thing" placeholder="Yeah, this is a postmodernist form that is asking about itself..."></textarea>
+		</div>
+		<div class="form-group">
+			<button type="submit" id="submit" class="submit-button">Confess</button>
+		</div>
+	</form>
+</body>
+</html>
