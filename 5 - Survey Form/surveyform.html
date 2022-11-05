@@ -14,24 +14,20 @@
 
 	<form id="survey-form">
 		<div class="form-group">
-			<!-- <label id="name-label" for="name">Name</label> -->
 			<p class="titles">Name</p>
-			<input id="name" class="input-field" type="text" name="name" placeholder="Full name, no nonsense." required>
+			<input id="name" class="field" type="text" name="name" placeholder="Full name, no nonsense." required>
 		</div>
 		<div class="form-group">
-			<!-- <label id="email-label" for="email">Email</label> -->
 			<p class="titles">Email</p>
-			<input id="email" class="input-field" type="email" name="email" placeholder="Not a burner atrocity, the real thing." required>
+			<input id="email" class="field" type="email" name="email" placeholder="Not a burner atrocity, the real thing." required>
 		</div>
 		<div class="form-group">
-			<!-- <label id="age-label" for="age">Age</label> -->
 			<p class="titles">Age</p>
-			<input id="age" class="input-field" type="number" name="age" max="120" min="12" placeholder="Lilibet never hesitated, would you?" required>
+			<input id="age" class="field" type="number" name="age" max="120" min="70" placeholder="To actualy complete a form you must be like 70..." required>
 		</div>
 		<div class="form-group">
-			<!-- <label id="dropdown-label" for="lets-talk-money">Lets talk money. Are you...</label> -->
 			<p class="titles">Lets talk money. Are you...</p>
-			<select id="dropdown" class="input-field" name="lets-talk-money">
+			<select id="dropdown" class="dropdown" name="lets-talk-money" title="money">
 				<option disabled selected value>Choose one</option>
 				<option value="dirt-poor">Dirt Poor</option>
 				<option value="poor">Poor</option>
@@ -43,41 +39,39 @@
 		<div class="form-group">
 			<p class="titles">Have you ever considered getting a nose job?</p>
 			<label for="yes-to-the-nose-job">
-				<input id="yes-to-the-nose-job" class="input-radio" type="radio" name="nose-job" value="yes" checked> Definitely!
+				<input id="yes-to-the-nose-job" class="radio" type="radio" name="nose-job" value="yes" checked> Definitely!
 			</label>
 			<label for="no-to-the-nose-job">
-				<input id="no-to-the-nose-job" class="input-radio" type="radio" name="nose-job" value="no"> No way! (Yeah right...)
+				<input id="no-to-the-nose-job" class="radio" type="radio" name="nose-job" value="no"> No way! (Yeah right...)
 			</label>
 			<label for="indecisive-about-the-nose-job">
-				<input id="indecisive-about-the-nose-job" class="input-radio" type="radio" name="nose-job" value="indecisive"> Oh God! Should I?
+				<input id="indecisive-about-the-nose-job" class="radio" type="radio" name="nose-job" value="indecisive"> Oh God! Should I?
 			</label>
 		</div>
 		<div class="form-group">
 			<p class="titles">Why are you still single?</p>
 			<label>
-				<input class="input-checkbox" type="checkbox" name="single" value="ugly"> Ugly
+				<input class="checkbox" type="checkbox" name="single" value="ugly"> Ugly
 			</label>
 			<label>
-				<input class="input-checkbox" type="checkbox" name="single" value="miserly"> Miserly
+				<input class="checkbox" type="checkbox" name="single" value="miserly"> Miserly
 			</label>
 			<label>
-				<input class="input-checkbox" type="checkbox" name="single" value="stuck-up"> Stuck-up
+				<input class="checkbox" type="checkbox" name="single" value="stuck-up"> Stuck-up
 			</label>
 			<label>
-				<input class="input-checkbox" type="checkbox" name="single" value="insufferable"> Insufferable
+				<input class="checkbox" type="checkbox" name="single" value="insufferable"> Insufferable
 			</label>
 			<label>
-				<input class="input-checkbox" type="checkbox" name="single" value="inferiority-complex"> Inferiority Complex
+				<input class="checkbox" type="checkbox" name="single" value="inferiority-complex"> Inferiority Complex
 			</label>
 			<label>
-				<input class="input-checkbox" type="checkbox" name="single" value="all-of-the-above"> All of the above
+				<input class="checkbox" type="checkbox" name="single" value="all-of-the-above"> All of the above
 			</label>
 		</div>
 		<div class="form-group">
-			<p class="titles">What was the most offensive thing you ever said?</p>
-			<label>
-				<textarea class="input-textarea" name="offensive-thing" placeholder="Like the time you..."></textarea>
-			</label>
+			<p class="titles">How did you like me?</p>
+			<textarea class="textarea" name="offensive-thing" placeholder="Yeah, this is a postmodernist form that is asking about itself..."></textarea>
 		</div>
 		<div class="form-group">
 			<button type="submit" id="submit" class="submit-button">Confess</button>
