@@ -9,7 +9,7 @@ Code and notes from the *Responsive Web Design Certification* provided by [freeC
 * [Survey Form](https://github.com/ArisPan/responsive-web-design/tree/main/5%20-%20Survey%20Form) **[Certification Project]**
 
 ### Part 2
-* Learn the CSS Box Model by Building a Rothko Painting
+* [Learn the CSS Box Model by Building a Rothko Painting](https://github.com/ArisPan/responsive-web-design/tree/main/6%20-%20Rothko%20Painting)
 * Learn CSS Flexbox by Building a Photo Gallery
 * Learn Typography by Building a Nutrition Label
 * Learn Accessibility by Building a Quiz
